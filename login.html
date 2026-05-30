@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+<body>
+
+<h2>E-Commerce Login</h2>
+
+<input type="text" id="user" placeholder="Enter Username">
+
+<button onclick="login()">Login</button>
+
+<script>
+function login(){
+
+let user=document.getElementById("user").value;
+
+if(user===""){
+alert("Enter Username");
+return;
+}
+
+localStorage.setItem("user",user);
+
+window.location.href="index.html";
+}
+</script>
+
+</body>
+  </html>
